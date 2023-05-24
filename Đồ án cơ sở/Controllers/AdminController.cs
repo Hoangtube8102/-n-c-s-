@@ -97,7 +97,7 @@ namespace Đồ_án_cơ_sở.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult SuaThongTinAdmin([Bind(Include = "MaGV,HoTen,email,SDT,MaMH,GioiTinh,QueQuan")] GiaoVien giaoVien)
+        public ActionResult SuaThongTinAdmin([Bind(Include = "MaGV,HoTen,email,SDT,GioiTinh,QueQuan")] GiaoVien giaoVien)
         {
             if (ModelState.IsValid)
             {
