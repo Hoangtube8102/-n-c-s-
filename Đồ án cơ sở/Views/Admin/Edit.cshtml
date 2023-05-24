@@ -33,7 +33,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.Hinh, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.Hinh, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+            @Html.EditorFor(model => model.Hinh, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.Hinh, "", new { @class = "text-danger" })
             <input type="file" name="fileUpload" id="fileUpload" accept="image/*"
                    style="display:none;" />
